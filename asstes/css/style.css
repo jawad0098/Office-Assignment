@@ -1,0 +1,361 @@
+@font-face {
+  font-family: 'proxima_novaregular';
+  src: url('../fonts/mark_simonson__proxima_nova_regular-webfont.woff2') format('woff2'),
+    url('../fonts/mark_simonson__proxima_nova_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  color: #2b2c2b;
+  font-family: 'proxima_novaregular';
+  font-weight: 300;
+  font-size: .9rem;
+  letter-spacing: .08rem;
+}
+
+/* ============================== Header-Start ================================= */
+
+.header_tit-img img {
+  margin-left: 10px;
+  width: clamp(101px, 25.2vw, 280px);
+}
+
+.header_logo img {}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+}
+
+.header_logo img {
+  width: clamp(74px, 7.2vw, 168px);
+}
+
+.header_cad-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+.header-nav img {
+  max-width: 100%;
+  width: 30px;
+}
+
+a.btn-currency-form {
+  padding-bottom: 4px;
+  display: inline-block;
+
+}
+
+a.btn-currency-form {
+  color: black;
+}
+
+a.btn-currency-form {
+  font-size: 14px;
+  padding-bottom: 18px;
+  color: black;
+}
+
+a.btn-currency-form {
+  font-size: clamp(9px, 3.2vw, 16px);
+}
+
+/* ============================== Header-End ================================= */
+/* ====================================== Main ================================ */
+
+
+main {
+  overflow-x: hidden;
+}
+
+.hero_slider img {
+  /* height: 100%; */
+  width: 100%;
+  height: calc(100vh - 110px);
+}
+
+.hero_slider {
+  height: calc(100vh - 110px);
+}
+
+.main_home_slider {
+  position: relative;
+}
+
+.main-tit {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.main-tit h1 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  letter-spacing: .8rem;
+  margin: 15px 0;
+}
+
+.main-tit h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+  margin: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.view-btn {
+  color: #fff;
+  background-color: rgba(0, 0, 0, .4);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: .08rem;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  padding: 8px 30px;
+}
+
+.view-btn:hover {
+  background-color: #fff;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.hero_slider h3 {
+  position: absolute;
+  font-size: 40px;
+  font-weight: 400;
+  color: red;
+  top: 50%;
+}
+
+/* .search-box {
+  position: absolute;
+  bottom: 50%;
+  background: aquamarine;
+  opacity: .98;
+  min-height: 120px;
+} */
+/* .main_home_slider:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 110px);
+    width: 100%;
+    background: #04040454;
+    z-index: 9;
+} */
+
+.main_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.search__box {
+  width: 90%;
+  position: absolute;
+  bottom: -10px;
+  background-color: #2b2c2b;
+  padding: 2rem;
+}
+.checkboxes_filed {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.form-check {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.form-check input {}
+
+.form-check input {
+    height: 20px;
+    width: 20px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+}
+
+.form-check label {
+    margin-left: 1rem;
+    padding-top: 3px;
+}
+
+.dropdown,
+.dropend,
+.dropstart,
+.dropup {
+  position: relative;
+  padding: 0;
+}
+
+.what-new {
+  padding: 0px 40px;
+padding-bottom: 10px;
+}
+.col.text-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 0px;
+}
+select.selectpicker {
+  padding: 20px;
+}
+.container-event{
+  max-width: 1650px;
+}
+/* .maiin_img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+} */
+.nav-co{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding: 3px;
+}
+.nav-co p {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+.maiin_img img {
+  width: 100%;
+}
+.maiin_img{
+position: relative;
+overflow: hidden;
+}
+.img-box {
+  transform: translateX(-301px);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #ffffffe1;
+  width: 57%;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.5s;
+  opacity: 0;
+  padding-left: 15px;
+}
+.maiin_img:hover .img-box{
+  transform: translateX(0px);
+  opacity: 1;
+}
+.img-box p {
+    margin: 0px;
+}
+.img-box b {
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.card_icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.card_text span {
+  padding-left: 30px;
+  font-size: 12px;
+    font-weight: 300;
+}
+.card_text h6 {
+    font-size: 9px;
+    font-weight: 900;
+}
+
+.card_text p {
+    margin: 0px;
+    font-size: 16px;
+}
+
+
+ /* ===================================== Main End # 1 =================================  */
+
+ /* ===================================== Main start#2 =================================  */
+ .sec_main {
+  padding: 30px;
+ }
+ .sec-main-title h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  letter-spacing: 6px;
+}
+
+.sec-button button {
+  text-transform: uppercase;
+  color: #148577;
+  border: 1px solid #148577;
+  background: none;
+  letter-spacing: 2px;
+  padding: 8PX 40px;
+}
+.sec-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.sec-button button:hover{
+  background-color: #148577;
+  color: #ffffff;
+  transition: 0.5s;
+}
+/* ===================================== Main start#2 =================================  */
+
+
+.footer {
+  padding: 0px 120px;
+  background: #2a2c2c;
+}
+.sub-foo {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_3 button {
+  color: #fff;
+  background-color: #2a2c2c;
+  border: 2px solid #fff;
+}
+.footer_3 button:hover{
+  background-color: #fff;
+  color: #000000;
+}
+.footer_3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
