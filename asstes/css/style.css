@@ -27,6 +27,7 @@ body {
   background: #ffffff;
   position: relative;
 }
+
 .header_area::before {
   content: "";
   width: 100%;
@@ -36,10 +37,12 @@ body {
   box-shadow: 0px 13px 8px #0000004a;
   z-index: 9999;
 }
+
 .header_tit-img img {
   margin-left: 10px;
   width: clamp(101px, 25.2vw, 280px);
 }
+
 .header_tit-img-1 img {
   margin-left: 20px;
   width: clamp(91px, 26.2vw, 194px);
@@ -51,6 +54,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .header_logo img {}
 
 .header_logo {
@@ -247,9 +251,23 @@ main {
   flex: 0 0 25%;
   max-width: 25%;
 }
-.form-check > input {
+
+.form-check>input {
   flex: 0 0 20px;
 }
+
+.text__area-main {
+  max-width: 100%;
+}
+
+.text__area-main.form-check-input {
+  background-color: #fff;
+}
+
+.check_color {
+  background-color: white;
+}
+
 .btn-secondary {
   color: #6c757d;
   border: 1px solid #6c757d;
@@ -379,7 +397,10 @@ select.selectpicker {
   margin: 0px;
   font-size: 16px;
 }
-
+a.a-color {
+  text-decoration: none;
+  color: black;
+}
 
 /* ===================================== Main End # 1 =================================  */
 
@@ -552,6 +573,7 @@ p.footer-end {
   align-items: center;
   gap: 60px;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .slider-con b {
@@ -576,6 +598,9 @@ p.footer-end {
 .slider-sub p {
   margin: 0px;
   color: #148577;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .slide-area-title {
@@ -591,33 +616,80 @@ p.footer-end {
   font-size: 16px;
   letter-spacing: 4px;
 }
+
 .slidr-bar {
   border-top: 1px solid black;
   padding: 10px;
 }
-button.carousel-control-prev:hover,button.carousel-control-next:hover {
+
+button.carousel-control-prev:hover,
+button.carousel-control-next:hover {
   background: #ffffff30;
 }
+
 .map__img img {
   object-fit: cover;
   width: 100%;
 }
+
 .details__area {
   border-bottom: 1px solid;
   width: 56%;
   margin-bottom: 2rem;
 }
+
 .slider-text p {
   text-align: justify;
 }
- /* ============================== STREET INFO START ===========================  */
- .street-info_area {
-  padding: 100px;
+
+/* ============================== STREET INFO START ===========================  */
+.street-info_area {
+  padding: 50px;
   background-color: #f4f6f5;
 }
- /* ============================== STREET INFO END =============================  */
 
+.input_control input {
+  margin-bottom: 30px;
+}
 
+.form-check.text__area-main {
+  padding-top: 10px;
+}
+
+.detail_logo img {
+  width: 55%
+}
+
+.logo_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo_title button{
+  color: #343a40;
+  border: 1px solid #343a40;
+}
+.logo_title button:hover{
+background-color:#343a40 ;
+}
+
+/* ============================== STREET INFO END =============================  */
+/* ============================== You Might Start =============================  */
+
+.slide-area-title.slide-sec-second h4 {
+  padding-top: 40px;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.slide-border-top{
+  width: 30%;
+}
+.slide-area-title.slide-sec-second {
+  padding: 0rem 5.2rem;
+  display: block;
+  
+}
+/* ============================= You Might End ============================= */
 
 
 
@@ -676,54 +748,75 @@ button.carousel-control-prev:hover,button.carousel-control-next:hover {
     padding: 40px 80px;
     background: #2a2c2c;
     color: #fff;
-}
+  }
 }
 
 @media screen and (max-width:767px) {
   .form-check {
     flex: 0 0 33.3%;
     max-width: 33.3%;
-}
-.sec-main-title h4 {
-  font-size: 20px;
-}
-.sec-button button {
-  padding: 8px 22px;
-}
-.footer_first-tex p {
-  text-align: start;
-}
-.footer_first-tex span {
-  justify-content: start;
-}
-.sub-foo {
-  justify-content: start;
-}
-.footer_end-icon {
-  justify-content: start;
-}
-.footer {
-  padding: 40px 20px;;
-}
+  }
+
+  .sec-main-title h4 {
+    font-size: 20px;
+  }
+
+  .sec-button button {
+    padding: 8px 22px;
+  }
+
+  .footer_first-tex p {
+    text-align: start;
+  }
+
+  .footer_first-tex span {
+    justify-content: start;
+  }
+
+  .sub-foo {
+    justify-content: start;
+  }
+
+  .footer_end-icon {
+    justify-content: start;
+  }
+
+  .footer {
+    padding: 40px 20px;
+  }
+  /* .slider-con ul li {
+    flex-wrap: wrap;
+} */
 }
 
-@media screen and (max-width:575px) { 
+@media screen and (max-width:575px) {
   .form-check {
     flex: 0 0 50%;
     max-width: 50%;
-}
-.search__box {
-  padding: 1rem;
-}
-.footer_3 {
-  align-items: start;
-  justify-content: start;
-}
+  }
+
+  .search__box {
+    padding: 1rem;
+  }
+
+  .footer_3 {
+    align-items: start;
+    justify-content: start;
+  }
+  /* .slider-con ul li {
+    flex-wrap: wrap;
+} */
 }
 
 @media screen and (max-width:480px) {
   .form-check {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+  .slide-area-title {
+    flex-wrap: wrap;
+}
+.slide-area-title {
+  padding: 0px;
 }
 }
