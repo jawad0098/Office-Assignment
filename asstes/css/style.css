@@ -41,7 +41,7 @@ body {
   height: 11%;
   position: absolute;
   bottom: 0px;
-  box-shadow: 0px 13px 8px #0000004a;
+  box-shadow: 0px 13px 8px #00000017;
   z-index: 9999;
 }
 
@@ -103,6 +103,7 @@ a.btn-currency-form {
 
 a.btn-currency-form {
   font-size: clamp(9px, 3.2vw, 16px);
+  text-decoration: none;
 }
 
 /* ============================== Header-End ================================= */
@@ -728,14 +729,9 @@ button.carousel-control-next:hover {
   overflow: hidden;
 }
 
-.slider__area {
-  height: 60vh;
-  overflow: hidden;
-  overflow-y: auto;
-}
 
 .content_slider-area {
-  padding: 18px 30px;
+  /* padding: 18px 30px; */
   text-align: justify;
 }
 
@@ -749,7 +745,10 @@ button.carousel-control-next:hover {
   font-weight: 500;
 }
 
+
 /* ============================== Slider-End =================================== */
+/* ============================== Sale_area-start ===================================  */
+
 .for-sale_heading {
   position: relative;
   padding: 27px 23px;
@@ -778,15 +777,18 @@ button.carousel-control-next:hover {
   margin-top: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 3px 0px 10px;
 }
+
 .for-sale_heading p {
-    font-size: 22px;
-    font-weight: 800;
-    margin: 0px;
-    padding-top: 10px;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0px;
+  padding-top: 10px;
 }
+
 .info__title-1 {
   padding-left: 20px;
 }
+
 .logo_title_bed {
   display: flex;
   align-items: baseline;
@@ -798,12 +800,15 @@ button.carousel-control-next:hover {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding-left: 34px;
 }
+
 .info__logo-bed h4 {
   font-size: 40px;
   letter-spacing: 10px;
   font-weight: 800;
 }
+
 .info__title-1 h4 {
   font-size: 36px;
   font-weight: 600;
@@ -820,24 +825,22 @@ button.carousel-control-next:hover {
   padding: 0px;
   margin: 0px;
 }
+
 .sec-bed_con {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding-bottom: 47px;
   flex-wrap: wrap;
-}
-.info_img-area {
-  /* width: 100%; */
 }
 
 .info-details-right {
   display: flex;
   padding-left: 39px;
-  padding-top: 20px;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .info-list a {
@@ -862,11 +865,20 @@ button.carousel-control-next:hover {
   font-size: 30px;
   font-weight: 600;
 }
+
 .info-list {
   position: relative;
 }
-
-.info-list h4::after {
+li.active {
+  position: relative;
+  margin-bottom: 0.6rem;
+}
+li.active a {
+  /* font-size: 1.6rem; */
+  color: #000;
+  font-weight: 600;
+}
+.info-list li.active::after {
   content: "";
   height: 3px;
   width: 100%;
@@ -875,7 +887,8 @@ button.carousel-control-next:hover {
   left: 0px;
   top: 30px;
 }
-.info-list h4::before{
+
+.info-list li.active::before {
   content: "";
   height: 10px;
   width: 10px;
@@ -885,12 +898,275 @@ button.carousel-control-next:hover {
   left: -20px;
   top: 13px;
 }
+.info_img-area {
+  position: relative;
+}
+
+.info_img-area > img {
+  padding-right: 6rem;
+  padding-top: 1.2rem;
+}
+
+.info_img-area span {
+  position: absolute;
+  right: 0;
+  background: green;
+  padding: 18px 2px;
+  display: inline-block;
+  height: 100%;
+}
+
+.info_img-area span img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%);
+}
+/* ============================== Sale_area-start ===================================  */
+/* ============================== map_area-start ===================================  */
+.main_map-title h4 {
+  margin: 0;
+  padding: 20px 0px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.school_area img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.school_area {
+  background: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 7px 14px;
+  height: 100%;
+  width: 100%;
+}
+.school_title-area h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+.school_title-area {
+  padding-top: 10px;
+  width: 70%;
+}
+.main_sch-con {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+}
+.school_area-logo i {
+  font-size: 22px;
+  color: #000000a3;
+}
+.grade-sch {
+  position: absolute;
+  display: flex;
+  right: 24px;
+  top: 40px;
+}
+
+.grade-sch p {
+  margin: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #8BC34A;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grade-sch span {
+  margin: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #03736c;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  margin-left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.transit_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transit_area p {
+  margin: 0px;
+}
+.drive_transit {
+  border: 1px solid #00000026;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.transit_text p {
+  margin: 0px;
+}
+/* ============================== map_area-end ===================================  */
+.page_info {
+    padding: 3rem;
+    position: relative;
+    padding-left: 4rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    padding-bottom: 0;
+}
+.page_info:before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    width: 38px;
+    height: 100%;
+    background: green;
+}
+.page_info p {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+}
+.for_sale-area {
+  position: fixed;
+  top: 108px;
+  right: 0;
+  z-index: 999;
+  background: #ffff;
+  width: 620px;
+  max-width: 100%;
+  overflow-y: auto;
+  transition: all 0.5s;
+  opacity: 0.6;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
+.for_sale-area.show{
+    opacity: 1;
+    visibility:visible;
+    transform: translateX(0);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+/* ======================================payment_area_start============================= */
+.payment_area {
+  padding: 40px;
+}
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+td b {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+/* general styling */
+/* body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+} */
+
+
+
+
+/* ======================================payment_area_end=============================== */
 
 
 /* start to check the screen for responsive disign Min screen 1920 and max screen 320 */
@@ -1014,17 +1290,6 @@ button.carousel-control-next:hover {
   }
 }
 
-/* .owner_area h1 {
-  font-weight: 900;
-  font-size: 33px;
-  color: #fff;
-  padding: 0px 10px;
-}
-.owner_area {
-  background-color: green;
-  transform: rotate(270deg);
-} */
-
 .owner__title {
   background: green;
   padding: 17px;
@@ -1033,4 +1298,10 @@ button.carousel-control-next:hover {
 .owner__title img {
   filter: invert(1);
   width: 100%;
+}
+.pagenation_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
 }
