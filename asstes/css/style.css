@@ -27,6 +27,8 @@ body {
   padding: 12px 0px;
   background: #ffffff;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 16px;
+  z-index: 2;
 }
 
 /* .information-area{
@@ -36,7 +38,7 @@ body {
 } */
 
 .header_area::before {
-  content: "";
+  /* content: ""; */
   width: 100%;
   height: 11%;
   position: absolute;
@@ -731,7 +733,6 @@ button.carousel-control-next:hover {
 
 
 .content_slider-area {
-  /* padding: 18px 30px; */
   text-align: justify;
 }
 
@@ -774,8 +775,9 @@ button.carousel-control-next:hover {
 }
 
 .first-border {
-  margin-top: 10px;
+  /* margin-top: 10px; */
   box-shadow: rgba(0, 0, 0, 0.35) 3px 0px 10px;
+  /* padding-top: 3px; */
 }
 
 .for-sale_heading p {
@@ -1054,7 +1056,8 @@ li.active a {
     opacity: 1;
     visibility:visible;
     transform: translateY(0);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .table_header {
   display: flex;
@@ -1165,10 +1168,6 @@ td b {
   }
   
   table td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
     content: attr(data-label);
     float: left;
     font-weight: bold;
@@ -1179,27 +1178,6 @@ td b {
     border-bottom: 0;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* general styling */
-/* body {
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.25;
-} */
-
-
 
 
 /* ======================================payment_area_end================================== */
@@ -1226,7 +1204,8 @@ td b {
   width: 100%;
 }
 .customer_main_content {
-  padding: 40px;
+  padding-left: 40px;
+  padding-top: 40px;
 }
 .customer-details p {
   margin: 0;
